@@ -1,3 +1,32 @@
+## Tray Application
+
+This single page application accepts form inputs & checks for form validations. After filling the form it logs all the information into console.
+
+## Directory Structure
+
+All the TS code live in _/src/_ directory. _index.tsx_ is the entry point for the application, all other files are imported when they are necessary. I've added components & other files to their respective sub-directories. This allows us to manage the code easily.
+
+**Redux Form**
+
+It's the best way to manage form state in Redux. Also, by using redux store the code is clean, reusable & scalable.
+
+Redux store is configured in _/src/state/index.ts_ & imported into '_/src/index.tsx_'.
+
+**Components**
+
+1. App - This is the main component for the application, where other components (pages) are being invoked in switch.
+2. User - First page in form submission.
+3. Privacy - Second page in form submission.
+4. Done - Console logs all form data.
+
+**Unit Tests**
+
+Test cases are written in _/src/tests/_.
+
+## Styling
+
+I've used _materialize-css_ & _styled-components_ to style the application. Added a theme.js file, which contains the color codes & typography. It's the single source of truth.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
